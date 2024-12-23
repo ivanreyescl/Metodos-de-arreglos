@@ -1,0 +1,11 @@
+.card {
+    height: 100px;
+}
+
+.card img{
+    height: 250px;
+}
+
+.tasks_table{
+    width:100%
+}

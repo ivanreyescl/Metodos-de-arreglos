@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-2 active" href="./index.html">Todo List</a>
+      </div>
+    </nav>
+    <hr>
+    <section class="container my-4">
+      <div class="mb-3">
+        <label for="newTask" class="form-label fw-bold">Nueva Tarea</label>
+        <div class="d-flex gap-3">
+          <input type="text" id="newTask" class="form-control"/>
+          <button type="button" id="addTaskBtn" class="btn btn-success">Agregar</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container d-flex flex-row gap-3">
+      <section class="mb-4">
+        <div class="d-flex flex-row gap-2">
+          <span>Total:</span>
+          <p class="fw-bold tasks_created">0</p>
+        </div>
+        <div class="d-flex flex-row gap-2">
+          <span>Realizadas:</span>
+          <p class="fw-bold tasks_done">0</p>
+        </div>
+      </section>
+
+      <section class="tasks_table">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>ID</th>
+              <th>Tarea</th>
+            </tr>
+          </thead>
+          <tbody id="taskList"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/javascripts/application.js"></script>
+  </body>
+</html>
